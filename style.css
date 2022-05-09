@@ -5,4 +5,6 @@ body{
 }
 .title{
 text-align: center;
+
+    font-family: "Apple Braille", sans-serif;margin: 0%; padding: 0%;
 }

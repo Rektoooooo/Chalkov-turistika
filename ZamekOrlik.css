@@ -1,0 +1,54 @@
+body{
+    font-family: "Apple Braille", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+}
+.title{
+    text-align: center;
+}
+.mapa{
+    float: right;
+    border-radius: 5%;
+}
+.info{
+margin:10px;
+}
+.button{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 32px;
+    border-radius: 5%;
+}
+.btn1{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.btn2{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.btn3{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.btn4{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+

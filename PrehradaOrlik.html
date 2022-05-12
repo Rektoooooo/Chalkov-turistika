@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Orlická přehrada.css">
+    <link rel="shortcut icon" type="image/x-icon" href="cabra%20logo%20copy.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js" integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Orlická přehrada</title>
 </head>
 <body>
-<div class="header">
-    <h1 class="title">Orlická přehrada</h1>
+
+<div class="wrapper">
+    <div class="static-txt" id="flozd"><span id="neger"></span>
+    </div>
 </div>
-<br>
-<br>
+
+<script>
+    let app = document.getElementById('neger');
+
+    let typewriter = new Typewriter(app, {
+        loop: false,
+        delay: 60,
+        cursor : ""
+    });
+
+    typewriter.typeString('Orlická přehrada')
+        .start();
+
+</script>
+<div class="header">
+    <h1 class="title"></h1>
+</div>
+
 <img class="pleft" src="Zvíkov_2.jpg" width="49%" height="49%">
 <div class="text">
     <h1>Něco o přehradě</h1>
@@ -24,6 +44,6 @@
     <h1>Kdy můžete naštívit</h1>
     Přehrada Orlík, kam je možno nahlédnout v rámci exkurzí, Prohlídku infocentra a unikátní vodní elektrárny Orlík. Exkurze je soustředěna do interiéru a exteriéru elektrárny a hráze. Uvidíte celý provoz včetně Kaplanových turbín, zázemí elektrárny i přivaděčů vody. Součástí běžné prohlídky je i okruh hrází. Tedy strávíte nejméně 60 minut v technicky unikátním prostoru!
 </div>
-    
+
 </body>
 </html>

@@ -54,3 +54,21 @@ body{
    letter-spacing: 1px;
     margin-top: 20px;
 }
+
+#neger{
+    color: black;
+    font-weight: 550;
+    margin-top: 50px;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper .static-txt{
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 90px;
+    margin-top: 50px;
+    margin-left: 15%;
+}

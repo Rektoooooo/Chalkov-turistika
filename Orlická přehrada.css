@@ -16,6 +16,7 @@ body{
     border: solid black 5px;
     float: right;
     margin-right: 1%;
+    border-radius: 5%;
 }
 
 .header{
@@ -31,20 +32,25 @@ body{
     margin-right: 7%;
     width: 30%;
     float: right;
-    margin-top: -420px;
+    margin-top: -480px;
     padding: 20px;
     font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
 }
 
 .pleft{
     margin-left: 1%;
+    border-radius: 5%;
 }
 
 .textl{
-    margin-left: 7%;
-    width: 30%;
     float: left;
-    margin-top: 20px;
-    padding: 20px;
     font-size: 20px;
+    width: 30%;
+    height: 450px;
+    text-align: right;
+    margin-left: 12.5%;
+   letter-spacing: 1px;
+
 }

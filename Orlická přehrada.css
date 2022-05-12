@@ -29,13 +29,13 @@ body{
 }
 
 .text{
-    margin-right: 7%;
+    margin-right: 9%;
     width: 30%;
     float: right;
-    margin-top: -480px;
+    margin-top: -40px;
     padding: 20px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 
@@ -49,8 +49,8 @@ body{
     font-size: 20px;
     width: 30%;
     height: 450px;
-    text-align: right;
-    margin-left: 12.5%;
+    text-align: center;
+    margin-left: 9%;
    letter-spacing: 1px;
-
+    margin-top: 20px;
 }

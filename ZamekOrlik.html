@@ -1,262 +1,69 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Zamek Orlik</title>
-    <link rel="stylesheet" href="ZamekOrlik.css">
-    <style>
-        * {box-sizing: border-box;}
-        .mySlides {display: none;}
-        img {vertical-align: middle;}
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active {
-            background-color: #717171;
-        }
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .text {font-size: 11px}
-        }
-    </style>
+    <link rel="stylesheet" href="Orlická přehrada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="cabra%20logo%20copy.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.min.js" integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Zámek Orlík</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="button">
-        <a href="#" class="btn1">Home</a>
-        <a href="#" class="btn4">Oteviraci doba</a>
-        <a href="#" class="btn5">Vztupenky</a>
-        <a href="#" class="btn6">Jak se k nam dostat</a>
-</div>
 
-<h1 class="title">Zamek Orlík</h1>
-
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="https://www.kudyznudy.cz/files/36/36ea855d-c857-4c2d-bb40-cd278bc2ec1f.jpg?v=20210223145206" style="width:100%">
-        <div class="text">1 / 3</div>
+<div class="navbar">
+    <img src="logo.png" class="logo">
+    <a href="#home">Ubytovaní</a>
+    <a href="#news">Areál</a>
+    <a href="#news">Jídelna</a>
+    <div class="dropdown">
+        <button class="dropbtn">Turistika
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="PrehradaOrlik.html">Orlická přehrada</a>
+            <a href="Rozhledna%20Milada.html">Rozhledna Milada</a>
+            <a href="ZamekOrlik.html">Zákem Orlík</a>
+            <a href="LomKozárovice.html">Lom Kozárovice</a>
+        </div>
     </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="https://www.kudyznudy.cz/files/6b/6b3982a0-70f1-44e3-a6f0-fa5fd8a31594.jpg?v=20200830143903" style="width:100%">
-        <div class="text">2 / 3</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="https://www.kudyznudy.cz/files/64/64049d87-9477-4bb8-a981-eac335747e65.jpg?v=20200830065447" style="width:100%">
-        <div class="text">3 / 3</div>
-    </div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
 </div>
 
-<script>
-    let slideIndex = 0;
-    showSlides();
+<a href="index.html"><img src="logo.png" width="7%" height="120%" style=" margin-top: 0.5%; margin-left: 60%;"></a>
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
-</script>
-<div class="Otevreno">
-    <h2 style="color: blue">Otevírací doba v sezóně 2022</h2>
 
-    <table class="html">
-        <thead>
-        <th style="color: blue;">Mesic</th>
-        <th style="color: blue;">Otevreno od-do</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td data-label="Mesic" style="color: black;">leden,únor,březen</td>
-            <td data-label="Otevreno od-do" style="color: black;">Pouze po domluvě se správou zámku</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">duben</td>
-            <td data-label="Význam" style="color: black;">9:00 - 16:00 (pouze víkendy, státní svátky)</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">květen</td>
-            <td data-label="Význam" style="color: black;">9:00 - 16:00 (úterý až neděle, státní svátky)	</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">červen,červenec,srpen </td>
-            <td data-label="Význam" style="color: black;">9:00 - 16:00 (úterý až neděle, státní svátky)	</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">září</td>
-            <td data-label="Význam" style="color: black;">9:00 - 16:00 (úterý až neděle, státní svátky)	</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">říjen</td>
-            <td data-label="Význam" style="color: black;">9:00 - 16:00 (úterý až neděle, státní svátky)	</td>
-        </tr>
-        <tr>
-            <td data-label="Tag" style="color: black;">listopad, prosinec</td>
-            <td data-label="Význam" style="color: black;">Pouze po domluvě se správou zámku</td>
-        </tr>
-
-        </tbody>
-    </table>
-    <p>
-    Prohlídka zámku trvá 50-60 minut, poslední prohlídka začíná zároveň se skončením otevírací doby.Po ukončení prodeje vstupenek  na poslední prohlídku v daném dni se pokladna i nádvoří zámku uzavírá ! Polední přestávka se na Orlíku nedrží. Prohlídky se konají v hlavní sezóně ( červenec, srpen) zhruba ve 20-40 minutových intervalech, v okrajových měsících pak v intervalech 60  minut.  Nad rámec uvedené doby je možné Orlík navštívit po domluvě se správou zámku. Prohlídky zámku lze objednat e-mailu: info@zamekorlik.cz nebo telefonicky na 382 275 101
-</p>
+<div class="imgtop">
+    <img src="cabra1.jpeg" width="100%" height="39%">
 </div>
-<div class="Vstupenky">
-    <h2 style="color: blue">Vstupenky</h2>
-    <h3 style="color: blue">ČESKÝ VÝKLAD</h3>
 
-    <table class="html">
-        <thead>
-        <th style="color: white;">.</th>
-        <th style="color: red;">Cena</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td data-label="." style="color: black;">Plné vstupné</td>
-            <td data-label="Cena" style="color: black;">350,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">Snížené vstupné(děti od 6 let,studenti do 26 let s platným ISIC,senioři nad 65 let,SENIORPAS)</td>
-            <td data-label="Cena" style="color: black;">300,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">Rodina 2 + 3 (2 dospělí a max 3 děti do 18 let)</td>
-            <td data-label="Cena" style="color: black;">800,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">pedagogický dozor, držitelé průkazu ZTP</td>
-            <td data-label="Cena" style="color: black;">50,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">zdarma: děti do 6 let, držitelé průkazu ZTP/P</td>
-            <td data-label="Cena" style="color: black;">0,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">Hromadné návštěvy škol (ZŠ, SŠ, VŠ)</td>
-            <td data-label="Cena" style="color: black;">250,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">Hromadné návštěvy mateřinek (MŠ)</td>
-            <td data-label="Cena" style="color: black;">200,-</td>
-        </tr>
-        </tbody>
-    </table>
-    <h3 style="color: blue">VÝSTUP NA VĚŽ(pokud neprší)-samostatný výstup na věž není možný!</h3>
-    <table class="html">
-        <thead>
-        <th style="color: white;">.</th>
-        <th style="color: red;">Cena</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td data-label="." style="color: black;">jednotné vstupné za osobu bez rozdílu věku</td>
-            <td data-label="Cena" style="color: black;">200,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">rodina/skupina 3-5 osob</td>
-            <td data-label="Cena" style="color: black;">500,-</td>
-        </tr>
-        </tbody>
-    </table>
-    <h3 style="color: blue">FOREIGN LANGUAGE INTERPRETATION:NJ,AJ,RJ must be ordered in advance</h3>
-    <table class="html">
-        <thead>
-        <th style="color: white;">.</th>
-        <th style="color: red;">Price</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td data-label="." style="color: black;">Full entry</td>
-            <td data-label="Cena" style="color: black;">450,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">Reduced admission (children from 6 years, students up to 26 years with ISIC, seniors over 65 years)</td>
-            <td data-label="Cena" style="color: black;">400,-</td>
-        </tr>
-        <tr>
-            <td data-label="." style="color: black;">free: children up to 6 years</td>
-            <td data-label="Cena" style="color: black;">0,-</td>
-        </tr>
-        </tbody>
-    </table>
-    <h5><p>Neposkytujeme množstevní slevy.
-
-        Vstupné lze zaplatit kartou, neakceptujeme platbu v eurech.</p>
-    <p style="color: blue">Prohlídka nad rámec běžné pracovní doby je zatížená dle dohody se správou zámku příplatkem (standartní výše 100%). Všechny uvedené ceny obsahují 15% DPH.</p>
-    <p>Pro menší cizojazyčné skupinky  do cca 8 - 10 osob je možné si v pokladně zámku zapůjčit tištěný text za cenu výkladu v českém jazyce. Nabízíme tzto jazykové mutace: anglicky, německy, rusky, italsky, španělsky, francouzsky, holandsky, polsky, maďarsky a čínsky.</p>
-    </h5>
+<div class="titletop">
+    <h1 style="text-align: center; border: solid 5px white; color: white">Zámek Orlík</h1>
 </div>
-<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.4981704197776!2d14.167977814884734!3d49.51287006235561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b698ed894df5b%3A0x8768bfb4ef3fcf80!2sOrl%C3%ADk%20Castle!5e0!3m2!1sen!2scz!4v1652102887471!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+<div class="header">
+    <h1 class="title"></h1>
+</div>
+
+<img class="pleft" src="zamek.jpeg" width="49%" height="49%">
+<div class="text">
+    <h1>Něco o Zamku</h1>
+    Orlík je hrad přestavěný na zámek u obce Orlík nad Vltavou v okrese Písek v Jihočeském kraji. Nachází se na skalním ostrohu nad Vltavou, jejíž údolí je zde zaplaveno vodou Orlické přehrady. Zámecký areál je chráněn jako kulturní památka.
+</div>
+
+<iframe class="mapa" src="https://en.frame.mapy.cz/s/majorofuba" width="49%" height="450" style="border:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<p>
+<div class="textl">
+    <h1>Kdy můžete naštívit</h1>
+    Prohlídky zámku se konají od dubna do října, dle aktuální otevírací doby. Prohlídka probíhá v zámeckých pantoflích, děti do šesti let dostanou návleky.
+</div>
+
+<div class="footer">
+    <h2 style="text-align: center;">Kontakt</h2>
+    <p><i class="fa fa-phone" aria-hidden="true"></i> +420 702 032 455  &nbsp;<i class="fa fa-envelope" aria-hidden="true"></i> info@cabra.cz</p>
+    <p>© 2022 Copyright: Cabra.cz</p>
+</div>
 
 </body>
 </html>
